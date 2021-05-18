@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <!-- Se define codificación de caracteres-->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <!-- Se establece la etiqueta viewport para indicar la escala del ancho que se debe considerar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- Se define hoja de estilos externa-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Se define hoja de estilos externa-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <title>Libro de ejercicios</title>
+  </head>
+  <body>
+    <!-- Se implementa una estructura que sea mas actualizada y acorde con HTML5 -->
+    <!-- Se estrucura la pagina en forma de cajas, donde la paginación se agrega a una caja header de la clase encabezado-->
+    <header class="encabezado">
+      <!-- Para que la paginación sea funcional, se agregan etiquetas de navegación a las otras paginas del libro -->
+      <a href="page2.html">&laquo; Capítulo 2</a>
+    </header>
+    <!-- Se seccionan los contenidos agrupandolos en una gran caja con las etiquetas section y la clase contenido -->
+    <section class="contenido">
+      <!-- Se utiliza la estructura de rejilla dentro de contenido, para cada caja con sus tipos de columnas -->
+      <article class="row show-grid">
+        <!-- Se indica el tamaño de las columnas con la clase col-lg -->
+        <div class="col-lg-12">
+          <!-- Se agregan elementos de tipografía para dar énfasis al título en letra cursiva-->
+            <h1><em>Capítulo tres</em></h1>
+            <!-- Se agregan elementos de tipografía para dar énfasis al subtitulo en letra negrita-->
+            <h2>Este es el contenido del <strong>capítulo 3</strong> de este interesante libro</h2>
+            <!-- Se agregan elementos de manejo de texto, alineando a la derecha en párrafo-->
+            <p class="text-right">Este es el final de nuestra aventura.</p>
+            <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit.
+            condimentum justo, ut commodo justo semper in.
+            Suspendisse tincidunt turpis nibh, vel gravida velit consectetur tempus. Aenean
+            placerat, sem eu tristique tempus, ex sem rhoncus lorem,
+            Quisque facilisis, libero sed dapibus suscipit, dolor felis mollis dui, nec luctus odio diam
+            ac nunc. Donec maximus elit non felis mattis,
+            et pharetra nunc dapibus.Cras hendrerit lorem vitae dignissim iaculis. Maecenas
+            ultricies, elit rhoncus dignissim sodales."
+          </p>
+        </div>
+      </article>
+      <!-- Se utiliza la estructura de rejilla dentro de contenido, para cada caja con sus tipos de columnas -->
+      <!-- Se agregan elementos de tipografía para dar énfasis al título en letra cursiva <em>-->
+      <!-- Se agregan elementos de manejo de texto, alineando a la derecha en párrafo y disnimuye parte del texto de menor importancia con <small>-->
+      <article class="row show-grid">
+        <div class="col-lg-12">
+            <p>Reflexiona sobre esto <em>"El leer sin pensar nos hace una mente desordenada. El pensar sin leer nos hace desequilibrados"</em></p>
+            <p class="text-right">Confucio (551 AC-478 AC). <small>Filósofo chino</small></p>
+        </div>
+      </article>
+      <!-- Se utiliza campos de formularios -->
+      <form role="form">
+        <!-- se usa la clase form-group para agrupar campos del formulario -->
+        <div class="form-group">
+          <!-- se utiliza etiqueta para el nombre del campo y el ingreso del correo -->
+          <label for="ejemplo_email_1"><strong>Correo</strong></label>
+          <input type="email" class="form-control" id="email" placeholder="Introduce tu corre electrónico">
+        </div>
+        <div class="checkbox">
+          <label>
+            <!-- se utiliza etiqueta checkbox para activar la suscripción -->
+            <input type="checkbox"> Si deseas activar tu suscripción activa esta casilla
+          </label>
+        </div>
+        <br>
+        <!-- se se crea un boton de envio activo -->
+        <button type="submit" class="btn btn-primary btn-mg">Enviar</button>
+      </form>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Se agregan las librerias de jQuery que nos sirven para trabajar con los elementos @media en nuestras hojas-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
